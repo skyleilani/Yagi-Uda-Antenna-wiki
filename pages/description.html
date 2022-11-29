@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,400&family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Yagi–Uda Description</title>
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="header">
+          <a href="./index.html" id="head-link">
+            <h1 id="header">Yagi–Uda Antenna</h1>
+          </a>
+        </div>
+
+        <div class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="./origins.html">Origins</a>
+          <a href="./description.html" class="is-active">Description</a>
+          <a href="./analysis.html">Analysis</a>
+          <a href="./design.html">Design</a>
+        </div>
+
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="navdrop-container">
+      <div class="nav-drop">
+        <a href="../index.html">Home</a>
+        <a href="./origins.html">Origins</a>
+        <a href="./description.html" class="is-active">Description</a>
+        <a href="./analysis.html">Analysis</a>
+        <a href="./design.html">Design</a>
+        <a href="./history.html">History</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="text-container">
+        <div class="text">
+          The Yagi–Uda antenna typically consists of a number of parallel thin
+          rod elements, each approximately a half wave in length. Often they are
+          supported on a perpendicular crossbar or "boom" along their centers.
+          Usually there is a single
+          <a href="https://en.wikipedia.org/wiki/Driven_element" class="link"
+            >driven</a
+          >
+          element in the center (usually but not always consisting of two rods
+          each connected to one side of the transmission line), and a variable
+          number of
+          <a href="https://en.wikipedia.org/wiki/Parasitic_element" class="link"
+            >parasitic elements</a
+          >, reflectors on one side and optionally one or more directors on the
+          other side. The parasitic elements are not electrically connected to
+          the transmission line, and serve as
+          <a href="https://en.wikipedia.org/wiki/Passive_radiator" class="link"
+            >passive radiators</a
+          >, reradiating the radio waves to modify the
+          <a href="https://en.wikipedia.org/wiki/Radiation_pattern" class="link"
+            >radiation pattern</a
+          >. Typical spacings between elements vary from about 1⁄10 to 1⁄4 of a
+          wavelength, depending on the specific design. The directors are
+          slightly shorter than the driven element, while the reflector(s) are
+          slightly longer. The radiation pattern is unidirectional, with the
+          <a href="https://en.wikipedia.org/wiki/Main_lobe" class="link"
+            >main lobe</a
+          >
+          along the axis perpendicular to the elements in the plane of the
+          elements, off the end with the directors.
+          <br />
+          <br />
+          Conveniently, the dipole parasitic elements have a
+          <a href="https://en.wikipedia.org/wiki/Node_(physics)" class="link"
+            >node</a
+          >
+          (point of zero
+          <a href="https://en.wikipedia.org/wiki/Radio_frequency" class="link"
+            >RF voltage</a
+          >) at their centre, so they can be attached to a conductive metal
+          support at that point without need of insulation, without disturbing
+          their electrical operation. They are usually bolted or welded to the
+          antenna's central support boom. The most common form of the driven
+          element is one fed at its centre so its two halves must be insulated
+          where the boom supports them.
+          <br />
+          <br />
+          The gain increases with the number of parasitic elements used. Only
+          one reflector is normally used since the improvement of gain with
+          additional reflectors is small, but more reflectors may be employed
+          for other reasons such as wider bandwidth. Yagis have been built with
+          up to 30–40 directors.
+          <br />
+          <br />
+          The bandwidth of an antenna is, by one definition, the width of the
+          band of frequencies having a gain within 3 dB (one-half the power) of
+          its maximum gain. The Yagi–Uda array in its basic form has very narrow
+          <a
+            href="https://en.wikipedia.org/wiki/Bandwidth_(signal_processing)"
+            class="link"
+            >bandwidth</a
+          >, 2–3 percent of the centre frequency. There is a tradeoff between
+          gain and bandwidth, with the bandwidth narrowing as more elements are
+          used. For applications that require wider bandwidths, such as
+          <a
+            href="https://en.wikipedia.org/wiki/Terrestrial_television"
+            class="link"
+            >terrestrial television</a
+          >, Yagi–Uda antennas commonly feature trigonal reflectors, and larger
+          diameter conductors, in order to cover the relevant portions of the
+          VHF and UHF bands. Wider bandwidth can also be achieved by the use of
+          "traps", as described below.
+          <br />
+          <br />
+          Yagi–Uda antennas used for
+          <a href="https://en.wikipedia.org/wiki/Amateur_radio" class="link"
+            >amateur radio</a
+          >
+          are sometimes designed to operate on multiple bands. These elaborate
+          designs create electrical breaks along each element (both sides) at
+          which point a parallel
+          <a href="https://en.wikipedia.org/wiki/LC_circuit" class="link">LC</a>
+          (inductor and capacitor) circuit is inserted. This so-called trap has
+          the effect of truncating the element at the higher frequency band,
+          making it approximately a half wavelength in length. At the lower
+          frequency, the entire element (including the remaining inductance due
+          to the trap) is close to half-wave resonance, implementing a different
+          Yagi–Uda antenna. Using a second set of traps, a "triband" antenna can
+          be resonant at three different bands. Given the associated costs of
+          erecting an antenna and rotator system above a tower, the combination
+          of antennas for three amateur bands in one unit is a very practical
+          solution. The use of traps is not without disadvantages, however, as
+          they reduce the bandwidth of the antenna on the individual bands and
+          reduce the antenna's electrical efficiency and subject the antenna to
+          additional mechanical considerations (wind loading, water and insect
+          ingress).
+        </div>
+      </div>
+      <div class="imgs-container">
+        <div class="img-container" id="img4-container">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Yagi_3_element.svg/220px-Yagi_3_element.svg.png"
+            alt="reflector-vs-director"
+            class="img"
+            id="img4"
+          />
+
+          <div class="img-descrip" id="img4-descrip">
+            Yagi–Uda antenna with a
+            <a
+              href="https://en.wikipedia.org/wiki/Passive_radiator"
+              class="link"
+              >reflector</a
+            >
+            (left), half-wave driven element (centre), and
+            <a
+              href="https://en.wikipedia.org/wiki/Passive_radiator"
+              class="link"
+              >director</a
+            >
+            (right). Exact spacings and element lengths vary somewhat according
+            to specific designs.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../main.js"></script>
+  </body>
+</html>

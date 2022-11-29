@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,400&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    
+    <title>Yagi–Uda antenna</title>
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>    
+      <nav>
+        <div class="navbar">
+          <div class="header">
+            <a href="./index.html" id="head-link">
+              <h1 id="header">Yagi–Uda Antenna</h1>
+            </a>
+          </div>  
+
+          <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="./origins.html">Origins</a>
+            <a href="./description.html">Description</a>
+            <a href="./analysis.html">Analysis</a>
+            <a href="./design.html"
+               class="is-active">Design</a>
+          </div>
+
+          <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+
+          </button>
+       </div>
+      </nav>
+     <div class="navdrop-container">
+      <div class="nav-drop"> 
+            <a href="./index.html"
+            class="is-active">Home</a>
+            <a href="./origins.html">Origins</a>
+            <a href="./description.html">Description</a>
+            <a href="./analysis.html">Analysis</a>
+            <a href="./design.html"
+               class="is-active">Design</a>
+      </div>
+     </div>  
+
+     <div class="container"> 
+      <div class="text-container">
+        <div class="text">
+            There are no simple formulas for designing Yagi–Uda antennas due to the complex relationships between physical parameters such as
+            <br/> <br/>
+            <ul>
+            <li>element length and spacing</li>
+            <li>element diameter</li>
+            <li>performance characteristics: gain and input impedance</li>
+            </ul>
+            However using the above kinds of iterative analysis, one can calculate 
+            the performance of a given a set of parameters and adjust them to optimize 
+            the gain (perhaps subject to some constraints). Since with an n element Yagi–Uda 
+            antenna, there are 2n − 1 parameters to adjust (the element lengths and relative 
+            spacings), this iterative analysis method is not straightforward. The mutual 
+            impedances plotted above only apply to λ/2 length elements, so these might need
+             to be recomputed to get good accuracy.
+            <br/><br/>
+            The current distribution along a real antenna element is only approximately given by 
+            the usual assumption of a classical standing wave, requiring a solution of
+             <a href="https://en.wikipedia.org/w/index.php?title=Hallen%27s_integral_equation&action=edit&redlink=1" class="link">Hallen's integral equation</a> 
+             taking into account the other conductors. Such a complete exact analysis, considering all 
+             of the interactions mentioned, is rather overwhelming, and approximations are inevitable on
+             the path to finding a usable antenna. Consequently, these antennas are often empirical designs
+             using an element of <a href="https://en.wikipedia.org/wiki/Trial_and_error" class="link">trial and error</a>, often starting with an existing design modified according 
+             to one's hunch. The result might be checked by direct measurement or by computer simulation.
+            <br/><br/>
+            
+            A well-known reference employed in the latter approach is a report published by 
+            the United States National Bureau of Standards (NBS) (now the <a href="https://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology" class="link">National Institute of 
+            Standards and Technology (NIST))</a> that provides six basic designs derived from measurements
+             conducted at 400 MHz and procedures for adapting these designs to other frequencies.
+              These designs, and those derived from them, are sometimes referred to as "NBS yagis."
+            <br/><br/>
+            
+            By adjusting the distance between the adjacent directors it is possible to reduce the back lobe 
+            of the radiation pattern.
+          </p>
+        </div>
+
+        <div class="imgs-container" id="imgs-container5">
+          <div class="img-container" id="img7-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Yagi_uda_antenna.jpg/170px-Yagi_uda_antenna.jpg"
+            class="img"
+            id="img7">
+
+            <div class="img-descrip" id="img7-descrip"> 
+                Two Yagi–Uda antennas on a single mast. The top one includes a corner reflector and three stacked 
+                Yagis fed in phase in order to increase gain in the horizontal direction (by cancelling power 
+                radiated toward the ground or sky). The lower antenna is oriented for vertical polarization,
+                 with a much lower resonant frequency.
+            </div>
+          </div>
+          </div
+      </div>
+     </div>
+
+
+   <script src="../main.js"></script>
+  </body>
+</html>
